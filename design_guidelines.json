@@ -1,0 +1,147 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "TaskFlow",
+      "archetype": "The Soft Utility",
+      "vibe": "Calm, Organized, Efficient, Premium",
+      "principles": [
+        "Fusion over Imitation: Mix productivity with architectural precision",
+        "Emotion First: Calmness and clarity above all",
+        "Content is King: Data must be legible and beautiful",
+        "Negative Space: Use whitespace to reduce cognitive load"
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Public Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      ],
+      "scale": {
+        "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold tracking-tight",
+        "body": "text-base leading-relaxed text-muted-foreground",
+        "small": "text-sm font-medium leading-none"
+      }
+    },
+    "colors": {
+      "palette_name": "Stone & Slate",
+      "mode": "light",
+      "tailwind_config": {
+        "extend": {
+          "colors": {
+            "background": "hsl(60 5% 96%)", 
+            "foreground": "hsl(240 10% 3.9%)",
+            "card": "hsl(0 0% 100%)",
+            "card-foreground": "hsl(240 10% 3.9%)",
+            "popover": "hsl(0 0% 100%)",
+            "popover-foreground": "hsl(240 10% 3.9%)",
+            "primary": "hsl(240 5.9% 10%)",
+            "primary-foreground": "hsl(0 0% 98%)",
+            "secondary": "hsl(240 4.8% 95.9%)",
+            "secondary-foreground": "hsl(240 5.9% 10%)",
+            "muted": "hsl(240 4.8% 95.9%)",
+            "muted-foreground": "hsl(240 3.8% 46.1%)",
+            "accent": "hsl(240 4.8% 95.9%)",
+            "accent-foreground": "hsl(240 5.9% 10%)",
+            "destructive": "hsl(0 84.2% 60.2%)",
+            "destructive-foreground": "hsl(0 0% 98%)",
+            "border": "hsl(240 5.9% 90%)",
+            "input": "hsl(240 5.9% 90%)",
+            "ring": "hsl(240 5.9% 10%)",
+            "brand": {
+              "50": "#f5f7fa",
+              "100": "#eaeef4",
+              "200": "#d0d9e7",
+              "300": "#a6b9d2",
+              "400": "#7694b8",
+              "500": "#53769d",
+              "600": "#405e82",
+              "700": "#344c69",
+              "800": "#2e4057",
+              "900": "#293648",
+              "950": "#1c232f"
+            }
+          }
+        }
+      }
+    },
+    "layout": {
+      "spacing": "Generous. Use p-6 or p-8 for cards. Gap-6 for grids.",
+      "radius": "0.5rem",
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "grid_strategy": "Bento Grid (Mode A for Dashboard)",
+      "sidebar": "Fixed width (250px), collapsible, border-r border-border"
+    },
+    "components": {
+      "buttons": {
+        "style": "rounded-md font-medium transition-all active:scale-95",
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        "ghost": "hover:bg-accent hover:text-accent-foreground"
+      },
+      "cards": {
+        "style": "bg-card text-card-foreground rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow duration-200"
+      },
+      "inputs": {
+        "style": "rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "backdrop-blur-md bg-white/70 border-b border-white/20 (Use for sticky headers)",
+      "noise": "Use a subtle noise texture on the sidebar background for depth",
+      "shadows": "shadow-sm for cards, shadow-lg for dropdowns/modals",
+      "gradients": "Avoid full gradients. Use subtle mesh gradients in hero sections only."
+    },
+    "assets": {
+      "images": {
+        "login_background": {
+          "url": "https://images.unsplash.com/photo-1765710039054-33511ae06136?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMG1pbmltYWwlMjBzdG9uZSUyMHRleHR1cmV8ZW58MHx8fHwxNzY5NzU4MjM1fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Abstract stone texture with soft shadows",
+          "usage": "Full screen background for Login/Register pages with overlay"
+        },
+        "user_avatar": {
+          "url": "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMGhlYWRzaG90fGVufDB8fHx8MTc2OTY4NDYzOHww&ixlib=rb-4.1.0&q=85",
+          "alt": "Professional user avatar",
+          "usage": "Default user profile picture in dashboard"
+        },
+        "empty_state": {
+          "url": "https://images.unsplash.com/photo-1628313348684-5d75dd67e7c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMG1pbmltYWwlMjBzdG9uZSUyMHRleHR1cmV8ZW58MHx8fHwxNzY5NzU4MjM1fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Abstract geometric shapes",
+          "usage": "Empty state for boards or tasks"
+        }
+      },
+      "icons": {
+        "library": "lucide-react",
+        "style": "stroke-width={1.5} size={20}"
+      }
+    },
+    "motion": {
+      "transitions": "transition-all duration-200 ease-out",
+      "hover": "hover:-translate-y-0.5 hover:shadow-md",
+      "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Update `index.css` to import Manrope and Public Sans fonts. Set them as CSS variables.",
+    "2. THEME: Update `tailwind.config.js` with the provided color palette. Ensure 'background' is set to the off-white stone color.",
+    "3. LAYOUT: Build a responsive SidebarLayout component. It should be persistent on desktop and a drawer on mobile.",
+    "4. COMPONENTS: Customize Shadcn components. Remove excessive rounded corners (stick to rounded-md or rounded-lg). Increase padding in Cards.",
+    "5. PAGES: Create 'Dashboard', 'BoardDetail', 'Login', 'Register'. Use the 'Bento Grid' layout for the Dashboard.",
+    "6. AUTH: Implement the Login/Register pages with the provided 'login_background' image on one side (split layout) or as a subtle background.",
+    "7. TASKS: Use a 'Kanban' style or 'List' style for tasks. Ensure priority tags have distinct colors (Low: Slate, Medium: Blue, High: Terracotta).",
+    "8. TESTING: Add `data-testid` to all interactive elements (buttons, inputs, cards).",
+    "9. FILE EXTENSIONS: Use .js and .jsx extensions as per the project structure. Do not use .ts/.tsx."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': Do not use generic gradients or centered text everywhere.",
+    "Micro-interactions: Add hover states to everything clickable.",
+    "Spacing: When in doubt, add more padding.",
+    "Contrast: Ensure text is legible against the stone background.",
+    "No Emojis: Use Lucide icons instead of emojis for UI elements."
+  ]
+}
